@@ -21,10 +21,24 @@
   <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
 
   <style>
-
+    :root{
+      --base: #ffc600;
+      --spacing: 10px;
+      --blur: 10px;
+    }
     /*
       misc styles, nothing to do with CSS variables
     */
+
+    img {
+      padding: var(--spacing);
+      background: var(--base);
+      filter: blur(var(--blur));
+    }
+
+    .hl {
+      color: var(--base);
+    }
 
     body {
       text-align: center;
@@ -41,7 +55,7 @@
 
     input {
       width: 100px;
-    }git remote add origin https://github.com/ferfunes/Playing-with-CSS-Variables-and-JS.git
+    }
   </style>
 
   <script>
